@@ -1,0 +1,396 @@
+@import "lib/vars";
+@import "lib/mixins";
+@import "lib/reboot";
+@import "lib/fontawesome/font-awesome";
+@import "lib/fontface";
+@import "lib/keyframes";
+
+@import "partials/grid";
+
+* {
+  // border: 1px solid pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #030839;
+}
+.container_header {
+  margin: 20px 20px 0px 20px;
+}
+// header-top//
+.header_brand {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.header_brand_right {
+  display: flex;
+}
+
+.header_brand_left {
+  display: flex;
+}
+.abrir {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.buscar {
+  color: white;
+  border: none;
+}
+.texto {
+  background-color: transparent;
+  border: none;
+}
+.save {
+  color: white;
+  border: none;
+  margin: 0px 10px 0px;
+}
+//main
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+//menu desplegable//
+
+#siderbar {
+ display: none;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  color: #030839;
+  width: 300px;
+  position: absolute;
+  .contenido {
+    margin: 10px;
+    ul {
+      padding: 0;
+      margin: 0px 0px 0px 30px;
+      list-style: none;
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+#cerrar {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+//marte dia/hora //
+
+.marte_hour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.reloj {
+  display: flex;
+}
+
+// prueba//
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-weight: 100;
+  line-height: 1.1;
+  letter-spacing: 0.025em;
+  margin-top: 0 px;
+  padding: 0;
+}
+
+//temperaturas aire y suelo//
+
+
+.caja_provisional{
+  display: flex;
+}
+
+#flecha{
+  padding-top: 20px;
+ color: white;
+}
+
+.container_temperaturas {
+  display: flex;
+  justify-content: center;
+  box-shadow: white;
+  border-radius: 20px;
+  height: 150px;
+  margin: 2em;
+  background: rgba(196, 196, 196, 0.24);
+}
+.icono {
+  .fas {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 10px;
+    justify-content: center;
+  
+  }
+}
+
+
+.container_prevision {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  height: 150px;
+  width: 300px;
+  background: rgba(196, 196, 196, 0.24);
+}
+.temperatura {
+  display: contents;
+}
+
+.temperatura_actual_grados {
+  color: white;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+
+.aire_suelo {
+  display: contents;
+}
+.temperatura_aire {
+  padding: 30px;
+}
+
+.temperatura_suelo {
+  padding: 30px;
+}
+
+.temperaturaPrevision{
+  display: inline-table;
+  margin: 30px;
+}
+
+.borde {
+  border-left: 1px solid white;
+  margin-top: 20px;
+  height: 7em;
+}
+//soles//
+.temepraturaPrevision_grafica {
+  border: 1px solid white;
+  height: 8em;
+  margin-top: 10px;
+}
+.temepraturaPrevision_grafica_base {
+  border: 1px solid white;
+  width: 15em;
+  height: 0;
+  margin-top: 136px;
+}
+.sun{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sol1 {
+  background: radial-gradient(50% 50% at 50% 50%, #e98f08 17.71%, rgba(248, 253, 0, 0.15) 100%);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position:absolute;
+  width: 30px;
+  height: 30px;
+}
+
+
+.sol2{
+  background: radial-gradient(50% 50% at 50% 50%, #e98f08 17.71%, rgba(248, 253, 0, 0.15) 100%);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position:absolute;
+  width: 30px;
+  height: 30px;
+}
+
+//presion
+
+.container_presion {
+  display: flex;
+}
+
+.presion {
+  width: 15px;
+  // height: 300px;
+  background: rgb(246, 11, 11);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 11, 11, 0.7763480392156863) 44%,
+    rgba(230, 202, 18, 0.8855917366946778) 72%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.fechita {
+  color: white;
+  padding-top: 20px;
+}
+
+
+//save//
+.container_temperaturas_save {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(23, 19, 65);
+  border-radius: 20px;
+  height: 150px;
+}
+
+.temepraturaPrevision_save {
+  margin: 20px;
+}
+
+//grid galeria de imagenes//
+
+.container_imagenes_save {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  margin: 0px 30px 30px;
+}
+
+.marco {
+  border-radius: 30px;
+  background-color: rgba(196, 196, 196, 0.24);
+  margin: 0px 10px 10px 0px;
+  text-align: right;
+}
+
+.marco_izq {
+  border-radius: 30px;
+  background-color: rgba(196, 196, 196, 0.24);
+  margin: 0px 0px 10px 0px;
+}
+
+#basura {
+  margin: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.imagen1 {
+  grid-area: 1 / 1 / 2 / 2;
+  box-sizing: content-box;
+}
+
+.imagen2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.imagen3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+//ventana modal galeria de imagenes //
+
+.pregunta{
+  color:rgb(23, 19, 65);
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+.container_modal {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  border-radius: 30px;
+  position: fixed;
+  display: none;
+}
+
+.modal-header {
+  margin: 0px;
+  .title-modal {
+    margin: 20px;
+  }
+}
+
+.modal-body {
+  display: flex;
+  margin: 20px;
+}
+
+.respuestas {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+// .si {
+//   display: contents;
+
+// }
+
+.yes {
+  color: rgb(23, 19, 65);
+  font-size: bold;  
+  font-size: 14px;
+  font-weight: bold;
+}
+
+// .no {
+//   display: contents;
+// }
+
+.dont {
+  color: rgb(23, 19, 65);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.modal .fondoModal {
+  position: fixed;
+  background-color: rgba(128, 128, 131, 0.596);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+#basura{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+      

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+    <!-- <script src="https://kit.fontawesome.com/b99e75b6e.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>redweat</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./app/galeria.js"></script>
+    <link href="https://cab.inta-csic.es/rems/">
+</head>
+
+<body>
+    <!-- contenedor header -->
+    <div class="container_header">
+        <!-- header top -->
+        <div class="header_brand">
+            <div class="header_brand_left"><i class="fa fa-bars active" class="abrir"></i></i></div>
+            <div class="header_brand_right">
+                <button class="save"><i class="fas fa-plus-circle"></i></button>
+                <div class="searchbox hidden">
+                    <button class="buscar"><i class="fa fa-search"></i></button>
+                    <input class="texto" type="text" placeholder="Búsqueda">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- menú desplegable -->
+    <div id="siderbar">
+        <nav class="contenido">
+            <div><i class="fa fa-times" id="cerrar"></i></div>
+            <ul><a href="index.html">Inicio</a></ul>
+            <ul class="usser">Usuario</ul>
+            <li>Nombre usuario</li><i class="fas fa-angle-down"></i>
+            <li>Perfil</li>
+            <ul>Archivos</ul><i class="fas fa-angle-down"></i>
+            <li><a href="save.html">Temperaturas</a></li>
+            <li>Fotografías</li>
+
+        </nav>
+
+    </div>
+
+    <!-- aqui termina el contendor del header  -->
+    <main class="main">
+    <div class="container_imagenes_save">
+        <!-- <div class="marco">
+            <div class="cerrar_imagen">
+                <button>
+                <i class="fas fa-trash-alt" id="basura"></i></button>
+            </div>
+            <img class="imagen1" src="">
+        </div> -->
+    </div>
+
+
+    <div class="container_modal" id="modal">
+        <!-- <div class="fondoModal" id="fondoModal"></div> -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title-modal">
+                    <h2 class="pregunta">¿Estás segurx que deseas eliminar la imagen?</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="respuestas">
+                    <button class="si" id="close_modal"><a href="save.html">
+                            <h2 class="yes">Sí</h2>
+                        </a></button>
+                    <button class="no"><a href="save.html">
+                            <h2 class="dont" id="close_modal">No</h2>
+                        </a></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </main>
+
+
+</body>
+
+</html>
