@@ -3477,456 +3477,114 @@ template {
   font-style: normal;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  cursor: pointer;
-}
-
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #030839;
+  background: #5590bd;
+  background: -webkit-gradient(linear, left top, right top, from(#5590bd), color-stop(54%, #6cb7f0), color-stop(82%, #b6d8f2));
+  background: linear-gradient(90deg, #5590bd 0%, #6cb7f0 54%, #b6d8f2 82%);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-.container_header {
-  margin: 20px 20px 0px 20px;
+h1 {
+  color: #6cb7f0 54%;
 }
 
-.header_brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: white;
-}
-
-.header_brand_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header_brand_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.abrir {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.buscar {
-  color: white;
-  border: none;
-}
-
-.texto {
-  background-color: transparent;
-  border: none;
-}
-
-.save {
-  color: white;
-  border: none;
-  margin: 0px 10px 0px;
-}
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#siderbar {
-  display: none;
-  left: 0px;
-  width: 250px;
-  height: 100%;
+.card {
   background-color: white;
-  color: #030839;
-  width: 300px;
-  position: absolute;
+  border-radius: 30px;
 }
 
-#siderbar .contenido {
-  margin: 10px;
-}
-
-#siderbar .contenido ul {
-  padding: 0;
-  margin: 0px 0px 0px 30px;
-  list-style: none;
-}
-
-#siderbar .contenido ul li {
-  list-style: none;
-}
-
-#cerrar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  cursor: pointer;
-}
-
-.marte_hour {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.reloj {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: white;
-  font-family: "Roboto";
-  font-weight: 100;
-  line-height: 1.1;
-  letter-spacing: 0.025em;
-  margin-top: 0 px;
-  padding: 0;
-}
-
-.caja_provisional {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#flecha {
-  padding-top: 20px;
-  color: white;
-}
-
-.container_temperaturas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: white;
-          box-shadow: white;
-  border-radius: 20px;
-  height: 150px;
-  margin: 2em;
-  background: rgba(196, 196, 196, 0.24);
-}
-
-.icono .fas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0px 0px 10px;
-  justify-content: center;
-}
-
-.container_prevision {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 20px;
-  height: 150px;
-  width: 300px;
-  background: rgba(196, 196, 196, 0.24);
-}
-
-.temperatura {
-  display: contents;
-}
-
-.temperatura_actual_grados {
-  color: white;
-  font-size: 22px;
-  margin-top: 15px;
-}
-
-.aire_suelo {
-  display: contents;
-}
-
-.temperatura_aire {
-  padding: 30px;
-}
-
-.temperatura_suelo {
-  padding: 30px;
-}
-
-.temperaturaPrevision {
-  display: inline-table;
-  margin: 30px;
-}
-
-.borde {
-  border-left: 1px solid white;
-  margin-top: 20px;
-  height: 7em;
-}
-
-.temepraturaPrevision_grafica {
-  border: 1px solid white;
-  height: 8em;
-  margin-top: 10px;
-}
-
-.temepraturaPrevision_grafica_base {
-  border: 1px solid white;
-  width: 15em;
-  height: 0;
-  margin-top: 136px;
-}
-
-.sun {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sol1 {
-  background: radial-gradient(50% 50% at 50% 50%, #e98f08 17.71%, rgba(248, 253, 0, 0.15) 100%);
-  border-radius: 50%;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-}
-
-.sol2 {
-  background: radial-gradient(50% 50% at 50% 50%, #e98f08 17.71%, rgba(248, 253, 0, 0.15) 100%);
-  border-radius: 50%;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-}
-
-.container_presion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.presion {
-  width: 15px;
-  background: #f60b0b;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, rgba(246, 11, 11, 0.776348)), color-stop(72%, rgba(230, 202, 18, 0.885592)), to(#00d4ff));
-  background: linear-gradient(180deg, rgba(246, 11, 11, 0.776348) 44%, rgba(230, 202, 18, 0.885592) 72%, #00d4ff 100%);
-}
-
-.fechita {
-  color: white;
-  padding-top: 20px;
-}
-
-.container_temperaturas_save {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid #171341;
-  border-radius: 20px;
-  height: 150px;
-}
-
-.temepraturaPrevision_save {
-  margin: 20px;
-}
-
-.container_imagenes_save {
+.pokemon-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  margin: 100px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
-img {
-  width: 500px;
-  height: auto;
-  margin: 0px 30px 30px;
-}
-
-.marco {
-  border-radius: 30px;
-  background-color: rgba(196, 196, 196, 0.24);
-  margin: 0px 10px 10px 0px;
-  text-align: right;
-}
-
-.marco_izq {
-  border-radius: 30px;
-  background-color: rgba(196, 196, 196, 0.24);
-  margin: 0px 0px 10px 0px;
-}
-
-#basura {
-  margin: 10px;
-  color: white;
-  padding: 5px;
-}
-
-.imagen1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-.imagen2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.imagen3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 3 / 2 / 4;
-}
-
-.pregunta {
-  color: #171341;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.container_modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
+.pokemon-block,
+.pokemon-block-back {
+  border-radius: 10px;
+  padding: 10px;
   background-color: white;
-  border-radius: 30px;
-  position: fixed;
+  -webkit-box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+          box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+.img-container {
+  background-image: url("./blob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pokemon-block p {
+  margin: 5px;
+}
+
+.name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#spinner {
   display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
-.modal-header {
-  margin: 0px;
+.pagination {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
-.modal-header .title-modal {
-  margin: 20px;
-}
-
-.modal-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px;
-}
-
-.respuestas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.yes {
-  color: #171341;
-  font-size: bold;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.dont {
-  color: #171341;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-}
-
-.modal .fondoModal {
-  position: fixed;
-  background-color: rgba(128, 128, 131, 0.596);
+.card-container {
+  position: relative;
   width: 100%;
   height: 100%;
-  top: 0;
-  z-index: 100;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
-#basura {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.flip-card:hover .card-container {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.pokemon-block,
+.pokemon-block-back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.pokemon-block-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  position: absolute;
+  top: 0%;
+}
+
+.stat-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */
